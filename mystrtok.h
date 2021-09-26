@@ -1,6 +1,11 @@
-#include <iostream>
-#include <cstring>
-#include "helper.h"
-using namespace std;
+#ifndef MYSTRTOK_H
 
-char *mystrtok(char *str, const char *delim);
+#define MYSTRTOK_H
+
+#include <cstdlib>
+
+#include "helper.h"
+
+char * mystrtok(char * str, const char * delim);
+
+#endif /* MYSTRTOK_H */
