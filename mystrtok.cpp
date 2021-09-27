@@ -9,11 +9,11 @@ char *mystrtok(char *str, const char *delim){
     char* curr_str; //The current string we are working with
     char* start; //Starting Position
     char* end; //End position
-    if (str != NULL){
-        curr_str = str;
+    if (*str != NULL){
+        curr_str = str; //Setting the current string pointer = to the actual string since the first variable is != to null
     }
     else{
-        curr_str = p;
+        curr_str = p; //If the first char is = to null than we willse the curr_str = to the tracker.
     }
     if (curr_str != NULL){
         start = find_first_in_the_string_that_is_not_in_the_set(curr_str,delim); //Getting start location
