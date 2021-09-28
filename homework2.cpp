@@ -23,4 +23,13 @@ int main(){
     if (strtok(test_string4,delim) == NULL){
         cout << "NULL" << endl;
     }
+
+    //Testing multiple Tokens
+    cout << "Testing Multiple Tokens: \n";
+    char test_string5[] = "Hey Good Friend!";
+    char *tok = test_string5;
+    while ((tok = mystrtok(tok, " ")) != NULL){
+        cout << tok << endl;
+        tok = NULL;
+    }
 }
